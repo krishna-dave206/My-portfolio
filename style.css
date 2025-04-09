@@ -1,0 +1,125 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #0b1120;
+    color: #fef08a;
+    line-height: 1.6;
+  }
+  
+  header, section, footer {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  h1, h2, h3 {
+    margin-bottom: 20px;
+  }
+  
+  /* Profile Image */
+  .profile-container {
+    margin: 0 auto 20px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(254,240,138,0.2) 0%, rgba(11,17,32,1) 80%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: float 4s ease-in-out infinite;
+    box-shadow: 0 0 15px rgba(254, 240, 138, 0.3);
+  }
+  
+  .profile-pic {
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fef08a;
+  }
+  
+  @keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+  }
+  
+  /* Skills */
+  .skills {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .skills img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s;
+  }
+  
+  .skills img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* About */
+  .about {
+    max-width: 800px;
+    margin: auto;
+    text-align: left;
+  }
+  
+  .about p {
+    margin-bottom: 20px;
+  }
+  
+  /* Projects */
+  .projects {
+    background-color: #0f172a;
+  }
+  
+  .card {
+    background: #1e293b;
+    border: 1px solid #fef08a;
+    border-radius: 12px;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(254, 240, 138, 0.1);
+  }
+  
+  .card .buttons {
+    margin-top: 20px;
+  }
+  
+  .card a {
+    background: #fef08a;
+    color: #0f172a;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s;
+  }
+  
+  .card a:hover {
+    background: #fde047;
+  }
+  
+  /* Contact */
+  .contact a {
+    color: #fef08a;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
+  /* Footer */
+  footer {
+    background: #0f172a;
+    padding: 20px;
+    font-size: 14px;
+    color: #94a3b8;
+  }
